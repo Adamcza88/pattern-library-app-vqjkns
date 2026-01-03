@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1767444728420,
+      "tag": "20260103125208_deep_whistler",
+      "breakpoints": true
+    }
+  ]
+}
