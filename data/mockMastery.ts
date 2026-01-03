@@ -1,0 +1,86 @@
+
+import { PatternMastery } from '@/types/pattern';
+
+// Mock mastery data for demonstration
+export const mockMasteryData: PatternMastery[] = [
+  {
+    patternId: 'hammer',
+    status: 'mastered',
+    correctCount: 15,
+    incorrectCount: 2,
+    lastAttempt: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000),
+    ease: 2.8,
+    intervalDays: 7,
+    dueAt: new Date(Date.now() + 5 * 24 * 60 * 60 * 1000),
+    recentMistakes: [],
+  },
+  {
+    patternId: 'hanging-man',
+    status: 'learning',
+    correctCount: 5,
+    incorrectCount: 4,
+    lastAttempt: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000),
+    ease: 2.3,
+    intervalDays: 2,
+    dueAt: new Date(Date.now() + 1 * 24 * 60 * 60 * 1000),
+    recentMistakes: [
+      new Date(Date.now() - 3 * 24 * 60 * 60 * 1000),
+      new Date(Date.now() - 1 * 24 * 60 * 60 * 1000),
+    ],
+  },
+  {
+    patternId: 'doji',
+    status: 'mastered',
+    correctCount: 12,
+    incorrectCount: 1,
+    lastAttempt: new Date(Date.now() - 5 * 24 * 60 * 60 * 1000),
+    ease: 2.6,
+    intervalDays: 5,
+    dueAt: new Date(Date.now()),
+    recentMistakes: [],
+  },
+  {
+    patternId: 'engulfing-bullish',
+    status: 'learning',
+    correctCount: 3,
+    incorrectCount: 5,
+    lastAttempt: new Date(Date.now() - 1 * 24 * 60 * 60 * 1000),
+    ease: 2.1,
+    intervalDays: 1,
+    dueAt: new Date(Date.now()),
+    recentMistakes: [
+      new Date(Date.now() - 6 * 24 * 60 * 60 * 1000),
+      new Date(Date.now() - 4 * 24 * 60 * 60 * 1000),
+      new Date(Date.now() - 1 * 24 * 60 * 60 * 1000),
+    ],
+  },
+  {
+    patternId: 'morning-star',
+    status: 'learning',
+    correctCount: 2,
+    incorrectCount: 6,
+    lastAttempt: new Date(Date.now() - 12 * 60 * 60 * 1000),
+    ease: 2.0,
+    intervalDays: 1,
+    dueAt: new Date(Date.now()),
+    recentMistakes: [
+      new Date(Date.now() - 5 * 24 * 60 * 60 * 1000),
+      new Date(Date.now() - 3 * 24 * 60 * 60 * 1000),
+      new Date(Date.now() - 2 * 24 * 60 * 60 * 1000),
+      new Date(Date.now() - 12 * 60 * 60 * 1000),
+    ],
+  },
+  {
+    patternId: 'shooting-star',
+    status: 'learning',
+    correctCount: 4,
+    incorrectCount: 3,
+    lastAttempt: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000),
+    ease: 2.4,
+    intervalDays: 3,
+    dueAt: new Date(Date.now() + 1 * 24 * 60 * 60 * 1000),
+    recentMistakes: [
+      new Date(Date.now() - 4 * 24 * 60 * 60 * 1000),
+    ],
+  },
+];
