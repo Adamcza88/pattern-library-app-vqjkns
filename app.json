@@ -41,7 +41,8 @@
       "typedRoutes": true
     },
     "extra": {
-      "router": {}
+      "router": {},
+      "backendUrl": "https://tntbj4az47taxb55sbrfan8n9pa8hags.app.specular.dev"
     }
   },
   "scheme": "Pattern Pro"
